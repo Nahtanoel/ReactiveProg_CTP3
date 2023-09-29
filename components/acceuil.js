@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View,Image, TextInput,Text, TouchableNativeFeedbackBase } from 'react-native';
+import { StyleSheet, View, Image, TextInput, Text, TouchableNativeFeedbackBase } from 'react-native';
 import Button from './button.jsx'
 
 
@@ -12,11 +12,11 @@ class Acceuil extends React.Component {
         return (
             <View style={styles.view}>
                 <View style={styles.header}>
-                  <Image style={styles.image} source={require('../assets/logo.jpg')}/>  
+                    <Image style={styles.image} source={require('../assets/logo.jpg')} />
                 </View>
                 <View style={styles.container}>
                     <View style={styles.SignIn}>
-                        <TextInput style={styles.textinput} placeholder="Votre nom"/>
+                        <TextInput style={styles.textinput} placeholder="Votre nom" />
                         <Button color='red' title='SIGN UP' onPress={() => { }} />
                     </View>
                     <View style={styles.Search}>
@@ -33,29 +33,17 @@ class Acceuil extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    image:{
-        marginLeft:'auto',
-        marginRight:'auto',
-        width:'40%',
-        resizeMode:"contain",
+    image: {
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        width: '40%',
+        resizeMode: "contain",
 
     },
-    Search:{
+    footer: {
+        marginLeft: 'auto',
+        marginRight: 'auto',
 
-    },
-    footer:{
-        marginLeft:'auto',
-        marginRight:'auto',
-
-    },
-    container:{
-
-    },
-    SignIn:{
-        
-    },
-    header:{
-        
     },
     textinput: {
         marginLeft: 'auto',
@@ -70,7 +58,7 @@ const styles = StyleSheet.create({
     },
     view: {
         backgroundColor: '#FFF',
-        
+
     },
 });
 
